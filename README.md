@@ -1,7 +1,7 @@
 # yii-yandex-money
-Yandex API yandex money in yii framework (tested on 1.1.15 version)
+Yandex money API in yii framework (tested on 1.1.15 version)
 
-These codes help you to start using yandex money with your yii-porject.
+These codes help you to start using yandex money with your yii porject.
 
 
 1.Start 
@@ -9,9 +9,8 @@ These codes help you to start using yandex money with your yii-porject.
   https://github.com/yandex-money/yandex-money-sdk-php/
   https://github.com/yandex-money/yandex-money-sdk-php-sample
   
-  
-  
-2. Download php yandex api  from https://github.com/yandex-money/yandex-money-sdk-php/tree/master/lib
+2. Download php yandex api  
+from https://github.com/yandex-money/yandex-money-sdk-php/tree/master/lib
 to your project /protected/extensions/yandexmoneyapi/
 
 3.Use these 'TestController' and its view 'index' in project:
@@ -19,4 +18,4 @@ to your project /protected/extensions/yandexmoneyapi/
 /protected/view/test/index.php
 
 
-it can be transform to module for yii.
+It can be transform to module for yii.
