@@ -19,9 +19,9 @@ These codes will help you to start using yandex money with your yii porject.
 3. <h4>Use these 'TestController' and its view 'index'</h4>
 in your project:
 
-  /protected/controllers/TestController.php
+  <i>/protected/controllers/TestController.php</i>
 
-  /protected/view/test/index.php
+  <i>/protected/view/test/index.php</i>
 
 ________________________________________________________________________________________
 It can be transform to module for yii.
