@@ -4,7 +4,7 @@ Yandex money API in yii framework (tested on 1.1.15 version)
 These codes will help you to start using yandex money with your yii porject.
 
 
-1. <b>Start<b/>
+1. <h1>Start<h1/>
 
   https://tech.yandex.ru/money/doc/dg/concepts/About-docpage/ 
 
