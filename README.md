@@ -24,4 +24,4 @@ These codes will help you to start using yandex money with your yii porject.
 
 
 <p style="font-size:1.5em;">It can be transform to module for yii.</p>
-<p style="font-size:2.5em; color:red;">It can be transform to module for yii.</p>
+<p style="font-size:20px; color:green;">text</p>
