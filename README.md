@@ -18,7 +18,7 @@ These codes help you to start using yandex money with your yii porject.
   
   to your project     /protected/extensions/yandexmoneyapi/
 
-3. Use these <b>'TestController'</b> and its view 'index' in project:
+3. Use these <b>'TestController'</b> and its view <b>'index'</b> in project:
 
   /protected/controllers/TestController.php
 
