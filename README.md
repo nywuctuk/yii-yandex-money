@@ -14,9 +14,9 @@ These codes will help you to start using yandex money with your yii porject.
   https://github.com/yandex-money/yandex-money-sdk-php-sample 
  
 2. <h4>Download php yandex api</h4>
-  <b></b>from https://github.com/yandex-money/yandex-money-sdk-php/tree/master/lib
+  from https://github.com/yandex-money/yandex-money-sdk-php/tree/master/lib
   
- <b></b>to your project  <i>/protected/extensions/yandexmoneyapi/</i>
+  to your project  <i>/protected/extensions/yandexmoneyapi/</i>
 
 3. <h4>Use these 'TestController' and its view 'index'</h4>
 in your project:
@@ -27,7 +27,7 @@ in your project:
   
 ________________________________________________________________________________________
 
-Good examples:
+<b>Good examples:</b>
 
 https://github.com/aTastyCookie/yandex_prestashop //yandex money for PRESTASHOP
 
