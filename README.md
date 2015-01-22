@@ -23,6 +23,4 @@ These codes will help you to start using yandex money with your yii porject.
   /protected/view/test/index.php
 
 
-
-
-It can be transform to module for yii.
+<p style="font-size:1.5em;">It can be transform to module for yii.</p>
