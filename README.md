@@ -1,7 +1,7 @@
 # yii-yandex-money
 Yandex money API in yii framework (tested on 1.1.15 version)
 
-These codes help you to start using yandex money with your yii porject.
+These codes will help you to start using yandex money with your yii porject.
 
 
 1. <b>Start<b/>
