@@ -28,7 +28,9 @@ in your project:
 ________________________________________________________________________________________
 
 Good examples:
+
 https://github.com/aTastyCookie/yandex_prestashop //yandex money for PRESTASHOP
+
 https://github.com/anisimow/yandexmoney //yandex money for PRESTASHOP  (old api yandex)
 
 ________________________________________________________________________________________
