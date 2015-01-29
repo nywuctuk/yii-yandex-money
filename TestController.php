@@ -7,7 +7,7 @@ use \YandexMoney\Config;
 
 
 class TestController extends CController {
-	public $breadcrumbs = array();
+    public $breadcrumbs = array();
 	
     public $client_secret = "ВВЕДИТЕ client_secret";
     public $client_id = "ВВЕДИТЕ client_id";
