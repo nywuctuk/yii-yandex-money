@@ -23,7 +23,7 @@ class TestController extends CController {
 		'money-source';
 	*/
 	
-	public $code;
+    public $code;
 	
     private $api = null;
     private $request_payment;
@@ -72,7 +72,7 @@ class TestController extends CController {
 		);
 		
 		if($this->test_payment == true){
-			$options['test_payment'] 	= 	true;
+			$options['test_payment'] 	= 	'true';
             $options['test_card'] 		= 	'available';
             $options['test_result'] 	= 	'success';
         }
@@ -117,7 +117,7 @@ class TestController extends CController {
 			);
 			
 			if($this->test_payment == true){
-				$options['test_payment'] 	= 	true;
+				$options['test_payment'] 	= 	'true';
 				$options['test_card'] 		= 	'available';
 				$options['test_result'] 	= 	'success';
 			}
