@@ -5,7 +5,6 @@ use \YandexMoney\API;
 use \YandexMoney\BaseAPI;
 use \YandexMoney\Config;
 
-
 class TestController extends CController {
     public $breadcrumbs = array();
 	
