@@ -79,7 +79,7 @@ class TestController extends CController {
 		
 		
 		$request_payment = $this->api->requestPayment($options);
-		$this->request_payment = $request_payment;			//для передачи результата в processPaymentByWallet
+		$this->request_payment = $request_payment;	// for pass the result to processPaymentByWallet
 		
 		
 		if($request_payment->status == "success") {
@@ -110,7 +110,7 @@ class TestController extends CController {
         	
 			$options = array(
 				"request_id" 	=> 	$this->request_payment->request_id,
-				"money_source" 	=> 	'wallet',						//def = wallet
+				"money_source" 	=> 	'wallet',				//def = wallet
 				//"csc"
 				//"ext_auth_success_uri"
 				//"ext_auth_fail_uri"
