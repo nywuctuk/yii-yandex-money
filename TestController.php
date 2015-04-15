@@ -1,6 +1,6 @@
 <?php
 
-require_once(dirname(__FILE__).'/../extensions/yandexmoneyapi/api.php');	//https://github.com/yandex-money/yandex-money-sdk-php/tree/master/lib
+require_once(dirname(__FILE__).'/../extensions/yandexmoneyapi/api.php');	// https://github.com/yandex-money/yandex-money-sdk-php/tree/master/lib
 use \YandexMoney\API;
 use \YandexMoney\BaseAPI;
 use \YandexMoney\Config;
@@ -10,7 +10,7 @@ class TestController extends CController {
 	
     public $client_secret = "ВВЕДИТЕ client_secret";
     public $client_id = "ВВЕДИТЕ client_id";
-    public $redirect_uri = "ВВЕДИТЕ redirect_uri"; 	//например, http://mysite.ru/index.php?r=test/index
+    public $redirect_uri = "ВВЕДИТЕ redirect_uri"; 	// for example, http://mysite.ru/index.php?r=test/index
     public $scope = "account-info payment-p2p";
     /*public $scope = 
 		'account-info'." ".
@@ -30,8 +30,8 @@ class TestController extends CController {
 	
 	public $success;
 	public $result;
-	public $is_error;				//boolean
-	public $test_payment = true;	//boolean
+	public $is_error;		// boolean (flag for 4.4)
+	public $test_payment = true;	// boolean
 
 	public $account_info;
 	
@@ -45,7 +45,7 @@ class TestController extends CController {
         return sprintf("%s/oauth/authorize?%s", Config::$SP_MONEY_URL, $params);
     }
 	
-	//1 - авторизация приложения и запрос прав ($scope)
+	//1 - Authorization using specific access($scope)
 	public function authorizeYM() {
 		$auth_url = $this->buildObtainTokenUrl2( $this->client_id, $this->redirect_uri, $this->scope );
 		BaseAPI::sendRequest($auth_url);
@@ -54,7 +54,7 @@ class TestController extends CController {
 	}
 	
 
-	//4.3	https://tech.yandex.ru/money/doc/dg/reference/request-payment-docpage/
+	// 4.3	https://tech.yandex.ru/money/doc/dg/reference/request-payment-docpage/
 	public function requestPaymentP2P() {
        
 		$options = array(
@@ -105,7 +105,7 @@ class TestController extends CController {
     }
 	
 
-	//4.4	https://tech.yandex.ru/money/doc/dg/reference/process-payment-docpage/
+	// 4.4	https://tech.yandex.ru/money/doc/dg/reference/process-payment-docpage/
     public function processPaymentByWallet() {
         	
 			$options = array(
@@ -151,13 +151,13 @@ class TestController extends CController {
 				$this->api = new API($access_token);
 				$this->success = "Авторизация успешна пройдена";
 				
-				//4
+				// 4
 				$this->account_info = $this->api->accountInfo(); //
 				
-				//4.3
+				// 4.3
 				$this->requestPaymentP2P();
 				
-				//4.4
+				// 4.4
 				if ($this->is_error == false)	{
 					$this->processPaymentByWallet();
 				}
@@ -173,7 +173,7 @@ class TestController extends CController {
 		
 	}
 	
-	//дефолтная функция и представление error
+	// default func
 	public function actionError() {
 		if($error=Yii::app()->errorHandler->error) {
 		if(Yii::app()->request->isAjaxRequest)
